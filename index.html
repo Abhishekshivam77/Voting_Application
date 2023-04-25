@@ -1,0 +1,48 @@
+<!-- // FRONTEND -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARNATAKA ELECTIONS</title>
+</head>
+<body>
+    <hr style="color: darkgreen;background-color: aqua; height:3px; width:100%;text-align:left;margin-left:0">
+    <h1 style="color: brown; text-align: center;">KARNATAKA ELECTIONS 2023</h1>
+    <hr style="color: yellowgreen;background-color: aqua; height:3px; width:100%;text-align:left;margin-left:0">
+<!-- this div is for the results -->
+
+    <div style="background-color:aquamarine;">
+        <h2 style="color:blueviolet;">Live Voting Status</h2>
+        <p>♣ PARTY A ♣: <span id="a">0</span>%</p>
+        <p>♣ PARTY B ♣: <span id="b">0</span>%</p>
+        <p>♣ PARTY C ♣: <span id="c">0</span>%</p>
+    </div>
+
+    <div style="background-color:lightgreen;">
+       <h2 style="color: coral;"> VOTE HERE ☻ </h2> 
+       <form id="voter_id_form">
+            <label for="voterID">VoterID : </label>
+            <input type="text" id="voterID" placeholder="Enter your VoterID here">
+            <br><br>
+            <label for="party">Select a Party : </label>
+            <select name="party" id="party">
+                <option value="A party">A</option>
+                <option value="B party">B</option>
+                <option value="C party">C</option>
+            </select>
+            <br><br>
+            <input style="color: orangered; margin-left: 40px;" type="submit" value="Vote">
+       </form>
+       <div style="background-color: cadetblue;" id="msg">
+
+       </div>
+    </div>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+
+<script src="./script.js"></script>
+
+</html>
+
